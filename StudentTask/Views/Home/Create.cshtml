@@ -1,0 +1,42 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post">
+    <div class="input-group mb-3">
+        <label asp-for="Name" class="input-group-text">Name</label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="input-group mb-3">
+        <label asp-for="Surname" class="input-group-text">Surname</label>
+        <input asp-for="Surname" class="form-control">
+        <span asp-validation-for="Surname"></span>
+    </div>
+    <div class="input-group mb-3">
+        <label asp-for="Fin" class="input-group-text">Fin</label>
+        <input asp-for="Fin" class="form-control">
+        <span asp-validation-for="Fin"></span>
+    </div>
+    <div class="input-group mb-3">
+        <label asp-for="Enterprise" class="input-group-text">Enterprise</label>
+        <input asp-for="Enterprise" class="form-control">
+        <span asp-validation-for="Enterprise"></span>
+    </div>
+    <div class="input-group mb-3">
+        <label asp-for="StartDate" class="input-group-text">Start date</label>
+        <input asp-for="StartDate" class="form-control">
+        <span asp-validation-for="StartDate"></span>
+    </div>
+    <div class="input-group mb-3">
+        <label asp-for="DateOfBirth" class="input-group-text">Date of birth</label>
+        <input asp-for="DateOfBirth" class="form-control">
+        <span asp-validation-for="DateOfBirth"></span>
+    </div>
+    <div asp-validation-summary="ModelOnly"></div>
+
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
